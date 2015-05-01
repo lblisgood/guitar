@@ -1,0 +1,13 @@
+include head
+include banner
+div.images_box#image_box
+    -for(var i = 0; i < data.length; i++){
+        section
+            a(href= data[i].image target="_blank")
+                img(src= data[i].link)
+            p ￥：#{data[i].price}
+            h3
+                a(href= data[i].image target="_blank")= data[i].title
+    -}
+
+include footer

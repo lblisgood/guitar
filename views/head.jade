@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        title 吉他网
+        link(rel="stylesheet", href="css/min/layout.min.css")
+        link(rel="stylesheet", href="css/min/comon.min.css")
+        script(src="scripts/base.js" defer="true")
+        script( src="js/jquery.js" type="text/javascript" defer="true")
+        script( src="js/jquery.lazyload.js" type="text/javascript" defer="true")
+
+
+    body
+        div#toTop ^
+            br
+            ||
+        div.wrap_all
+            div#compare
+                div.compare_in
+                    a#close X
+                    div.guitar.one#one
+                        section.main_pic
+                            img(src="" class="main_image")
+                            h4.name
+                        section.deploy
+                            p.title
+                                span 产品配置
+                            p.args
+                            p.price
+                        section.pic
+                            p.title
+                                span 产品图片
+                            div
+                                img.pic_x(src="")
+                                img.pic_f(src="")
+                                img.pic_b(src="")
+                                img.pic_h(src="")
+                                img.pic_t(src="")
+                    div.guitar.tow#tow
+                        section.main_pic
+                            img(src="" class="main_image")
+                            h4.name
+                        section.deploy
+                            p.title
+                                span 产品配置
+                            p.args
+                            p.price
+                        section.pic
+                            p.title
+                                span 产品图片
+                            div
+                                img.pic_x(src="")
+                                img.pic_f(src="")
+                                img.pic_b(src="")
+                                img.pic_h(src="")
+                                img.pic_t(src="")
+            div.top
+                header
+                    div.logo
+                        a(href="/")
+                            img(src="images/logo.png")
+                    ul.menu#menu
+                        li
+                            a(href="/") 首页
+                        li
+                            a(href="/shop") 吉他商城
+                        li
+                            a(href="buy") 选购指南
+                        li#search
+                            form.search#search_form(method="get" name="search" action="/search")
+                                div.angle
+                                    div.angle.bottom
+                                input#type(type="text" name="guitar" placeholder="请输入吉他型号")
+                                input#sub(type="submit" name="submit" value="")
+
+                    div.user
+                        -if(user && user != '')
+                            a.username(href="javescript:;")= user
+                            a.regist(href="/loginout") 注销
+                        -else
+                            a.login(href="/login") 登录
+                            a.regist(href="/register") 免费注册
+            block content
+            block footer

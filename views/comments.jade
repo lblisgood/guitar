@@ -1,0 +1,22 @@
+div#comments
+    h3 讨论区
+    .com_box
+        div.reply
+            ul
+                -if(comments)
+                    -for(var i = 0; i < comments.length; i++)
+                        li
+                            span.name #{comments[i].user} 如是说：
+                            span.time #{comments[i].date}
+                            p #{comments[i].comment}
+                            a.anwser 回复
+                -else
+                    li
+                        p 暂无评论！~\(≧▽≦)/~
+        form.question#question(action="/comments" method="post")
+            label 我也说两句~~
+            textarea.descibe#describe(name="text")
+            input(type="reset",value="清空", id="clear")
+            input(type="button",value="发表",id="submit_reply")
+
+

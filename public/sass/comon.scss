@@ -1,0 +1,98 @@
+@charset "utf-8";
+html{_background:url(about:blank);
+  height: 100%;
+  width: 100%;
+}
+/*通用样式*/
+abbr,article,aside,audio,canvas,datalist,details,dialog,footer,header,mark,menu,meter,nav,output,progress,section,time,video{
+  display:block;
+}
+
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  font:normal 12px "Microsoft YaHei","Arial Narrow",HELVETICA;
+}
+
+table{
+  border-collapse:collapse;border-spacing:0;
+}
+
+abbr,acronym{
+  border:0;
+  font-variant:normal;
+}
+
+fieldset,img{
+  border:none;
+  vertical-align:top;
+}
+
+ol,ul{
+  list-style:none;
+}
+
+p{
+  text-align:justify;
+}
+
+a{
+  color:#333;
+  text-decoration:none;
+}
+
+a:link{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+address,caption,cite,code,em,strong,i{
+  font-style:normal;
+  font-weight:normal;
+}
+mark{
+  background:none;
+  display:inline;
+  font-weight:bold;
+}
+
+time{
+  display:inline;
+}
+
+h2{
+  font-size:16px;
+  font-weight:bold;
+  line-height:40px;
+}
+
+fieldset{
+  border:none;
+}
+
+address{
+  font-style:normal;
+}
+
+input,
+fieldset,
+textarea{
+  outline:none;
+  border: none;
+  border-radius: 0;
+}
+
+input[type="text"],
+input[type="password"]{
+  appearance:none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+

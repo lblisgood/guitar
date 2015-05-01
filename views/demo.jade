@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title get data
+    link(rel = 'stylesheet', href='/stylesheets/demo.css')
+    body
+        -for(var i = 0; i < data.length; i++){
+
+            section
+                img(src= data[i].image)
+                h4 型号 :
+                    span.name= data[i].title
+                p 生产日期 :
+                    span=  data[i].date
+                p 价格 :
+                    span= data[i].price
+
+       -}
+

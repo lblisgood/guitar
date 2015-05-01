@@ -1,0 +1,19 @@
+include head
+div.loginbox
+    h3 会员登录
+    .login_form
+        form(name="login",method="post",action="/login" id="login_form")
+            p
+                label 用户名：
+                input(type="text",name="username" id="usr")
+            p.pwd
+                label 密码：
+                input(type="password" name="pwd" id="pwd")
+        -if(loginfail)
+            p#wrong= loginfail
+        -else
+            p#wrong
+        div
+            a.active(href="#" id="log") 登录
+            a(href="/register") 去注册···
+include footer

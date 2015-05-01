@@ -1,0 +1,31 @@
+extends head
+
+block content
+  include banner
+  div.content
+      div.wrap#wrap
+          -for(var i = 0; i < data.length; i++){
+              section
+                  p.guitar_img
+                    img(src= data[i].image)
+                    span.cover
+                        a.compare(href = "javascript:;" gid= data[i].gid) 加入对比
+                        a.buy(href= data[i].link target="_blank") 去购买
+                  h4 型号 :
+                      span.name= data[i].title
+                  p 生产日期 :
+                      span=  data[i].date
+                  p 价格 :
+                      span= data[i].price
+              -}
+      div.page
+          ul.page_num
+              -for(var i = 1; i < count+1; i++)
+                  -if( i == page)
+                      li
+                          a.active(href="/page?page=#{i}")= i
+                  -else
+                      li
+                          a(href="/page?page=#{i}")= i
+  include comments
+  include footer

@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        link(rel="stylesheet",href="/stylesheets/sytle.css")
+    body
+        header.top
+            div.top_left
+                ul
+                    li ItemA
+                    li ItemB
+                    li ItemC
+                    li ItemD
+            div.top_right
+                ul
+                    li.login Login
+                    li.regist Regist
+                    li.search Search
+                div.searchBox
+                    form(method="GET" action="/seach" enctype="application/x-www-form-urlencoded")
+                        input(type="text" name="searchText" placeholder="型号、品牌")
+                        input(type="submit" name="submit" value="Search")
+        nav.nav
+            div.show
+                ul
+                    li
+                        a
+                            img(src="/images/banner.jpg")
+
+
