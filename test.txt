@@ -1,4 +1,7 @@
 this is a test!
 yeah! this is a git test!
 yeah! this is a second commit!
-this is master branch!
+no  it is not my fault!
+please believe me !
+here is master branch!
+yeah  this is dev branch!
