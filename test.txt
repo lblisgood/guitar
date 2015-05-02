@@ -1,6 +1,4 @@
-this is a test!
-yeah! this is a git test!
-yeah! this is a second commit!
+yeah ! i will create a new function here!
 no  it is not my fault!
 please believe me !
 here is master branch!
