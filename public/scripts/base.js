@@ -449,7 +449,7 @@ function getcookie(name, nounescape) {
 
     var oMenu = document.getElementById('menu'),
         aLi = oMenu.getElementsByTagName('li'),
-        page = ['/','/picture','/struct','/buy'],
+        page = ['/','/shop','/buy'],
         pathname = location.pathname;
 
     for(var i = 0; i < page.length; i++){
