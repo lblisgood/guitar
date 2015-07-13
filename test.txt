@@ -1,6 +1,3 @@
 i am on of master,s branch and my name called test! i will show in dev here is really test branch!
 i am on of master,s branch and my name called test! i will show in dev
 i am dev branch i will add some content here!
-please believe me !
-here is master branch!
-yeah  this is dev branch!
